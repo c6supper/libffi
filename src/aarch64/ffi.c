@@ -19,6 +19,10 @@ CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,
 TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
 SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.  */
 
+#if defined(__QNX__)
+#include <unistd.h>
+#endif
+
 #if defined(__aarch64__) || defined(__arm64__)|| defined (_M_ARM64)
 #include <stdio.h>
 #include <stdlib.h>
